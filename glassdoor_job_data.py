@@ -25,7 +25,7 @@ driver.get("https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=
 jobs = ['Software Engineer', 'Data Scientist', 'Developer', 'UI Designer', 'Cyber Security']
 csv_file = open('Software Engineer.csv', 'w', newline='')
 csv_writer = csv.writer(csv_file)
-csv_writer.writerow(['Job Title', 'Company', 'Salary 50th Percentile', 'Salary 10th Percentile', 'Salary 90th Percentile', 'Overall Rating', 'Comapny Description', 'Founded Year', 'Head Quarter', 'Company Size', 'Industry', 'Company Revenue', 'Job Description'])
+csv_writer.writerow(['Job Title', 'Company', 'Salary 50th Percentile', 'Salary 10th Percentile', 'Salary 90th Percentile', 'Overall Rating', 'Company Description', 'Founded Year', 'Head Quarter', 'Company Size', 'Industry', 'Company Revenue', 'Job Description'])
 
 # for keyword in jobs:
 jobname = driver.find_element_by_name('sc.keyword')
